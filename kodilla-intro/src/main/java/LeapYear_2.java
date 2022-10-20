@@ -4,7 +4,7 @@ public class LeapYear_2 {
 
         System.out.println(rok);
 
-        if (rok%4==0) {
+        if (rok%4>0) {
             System.out.println("Rok nie Przestepny");
         } else if (rok%100 != 0) {
             System.out.println("Rok przestepny");

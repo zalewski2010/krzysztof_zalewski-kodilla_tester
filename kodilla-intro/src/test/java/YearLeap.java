@@ -1,20 +1,14 @@
 public class YearLeap {
-
-    public static void main(String[] args) {
-        int rok = 2068;
-
-        System.out.println(rok);
-
-        if (rok%4>0) {
-            System.out.println("Rok nie Przestepny");
-        } else if (rok%100 > 0) {
-            System.out.println("Rok przestepny");
+    public static void main (String[] args) {
+        int[] numbers =  {2, 3, 7};
+        int sumNumbers(int[] numbers) {
+        int result = 0;
+        for (int i = 0; i < numbers.length; i++) {
+            result = result + numbers[i];
         }
-        else if (rok%400==0) {
-            System.out.println("Rok Przestepny");
-        }
-        else
-            System.out.println("Rok nie przestepny");
+        return result;
+            System.out.println(result);
+    }
     }
 
 }
