@@ -22,6 +22,7 @@ public class User {
         User frankie = new User("Frankie", 45);
         User[] users = {anna, betty, carl, david, eva, frankie};
 
+
         double sumAge;
         int sum = 0;
         for (int i = 0; i < users.length; i++) {
