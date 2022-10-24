@@ -14,11 +14,11 @@ public class OperatingSystem {
 
 
     public void setTurnOn() {
-        System.out.println("your software is from: " + turnOn + " and we dont have updates");
+        System.out.println("Your windows is from: " + turnOn + " and we don't have new updates");
     }
 
     public void displayNumberOfTurnOff() {
-        System.out.println("Your system is from: " + turnOff + " and you should be happy");
+        System.out.println("Your linux is from: " + turnOff + " and you should be happy");
     }
 }
 
