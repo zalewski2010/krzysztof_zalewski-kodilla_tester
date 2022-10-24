@@ -3,7 +3,7 @@ import java.util.Random;
 public class RandomNumbers {
     public static void main(String[] args) {
 
-        int i = 1;
+        int i = 5000;
         int liczba, suma = 0, min, max;
 
         Random losowanie = new Random();
