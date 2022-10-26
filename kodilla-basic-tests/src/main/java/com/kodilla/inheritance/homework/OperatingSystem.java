@@ -4,20 +4,20 @@ import java.time.Year;
 
 public class OperatingSystem {
 
-    private int turnOn;
+    private int turnOn; // modyfikator dostępu????
     private int turnOff;
 
-    public OperatingSystem(int turnOn, int turnOff) {
+    public OperatingSystem(int turnOn, int turnOff) { //konstruktor
         this.turnOn = turnOn;
         this.turnOff = turnOff;
     }
 
 
-    public void setTurnOn() {
+    public void setTurnOn() { //metoda
         System.out.println("Your windows is from: " + turnOn + " and we don't have new updates");
     }
 
-    public void displayNumberOfTurnOff() {
+    public void displayNumberOfTurnOff() { //metoda
         System.out.println("Your linux is from: " + turnOff + " and you should be happy");
     }
 }

@@ -1,31 +1,31 @@
 package com.kodilla.inheritance;
 
 public class Car {
-    private int wheels;
-    private int seats;
+    private int wheels; //prywatna zmienna
+    private int seats; // prywatna zmienna
 
-    public Car(int wheels, int seats) {
+    public Car(int wheels, int seats) {  //konstruktor Car
         this.wheels = wheels;
         this.seats = seats;
     }
 
-    public void turnOnLights() {
+    public void turnOnLights() {  // metoda turnOnLights
         System.out.println("Lights were turned on");
     }
 
-    public void openDoors() {
+    public void openDoors() {  // metoda openDoors
         System.out.println("Opening 4 doors"); }
 
-    public void displayNumberOfSeats() {
+    public void displayNumberOfSeats() {  // metoda displayNumberOfSeats
             System.out.println("number of seats: " + seats);
         }
 
 
-    public int getWheels() {
+    public int getWheels() { // getter getWheels
         return wheels;
     }
 
-    public int getSeats() {
+    public int getSeats() { //  getter getSeats
         return seats;
     }
 }
