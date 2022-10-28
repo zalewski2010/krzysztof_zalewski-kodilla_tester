@@ -1,7 +1,10 @@
 package com.kodilla.bank.homework;
 
-private
-public class Bank {
+
+public class Bank extends CashMachine{
+    public void Bank(){
+        super("driver" ,"1.Driving, 2.Selling ice cream", 2000);
+}
 
     public double getIncome() { //metody na średnią wpłat
         return this.getAverage();

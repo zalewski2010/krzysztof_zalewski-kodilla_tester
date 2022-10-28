@@ -6,6 +6,9 @@ public class Application {
     int height;
 
     public Application(String name, double age, int height) {
+        this.name=name;
+        this.age=age;
+                this.height=height;
 
     }
 

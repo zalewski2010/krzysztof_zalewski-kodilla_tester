@@ -3,42 +3,40 @@ package com.kodilla.bank.homework;
 
 import java.util.Arrays;
 
-public class CashMachine {
+public abstract class CashMachine {
 
-    private double transaction; // transakcje (tu metoda)
+    private final int transactions; // transakcje (tu metode zrobic)
 
-    private double balance; // stan konta/bilans (tu metoda)
-    private double income; // wpłatay;
-    private double expend; // wypłaty
+    private final int balance; // stan konta/bilans (tu metode zrobic)
+    private final int income; // wpłatay;
+    private final int expend; // wypłaty
 
 
-    public CashMachine(double balance, double income, double expend) {
+    public CashMachine(int balance, int income, int expend, int transactions) {
         this.balance = balance;
         this.income = income;
         this.expend = expend;
+        this.transactions = transactions;
     }
 
     public double getBalance() { // metoda zwraca stan konta
         return balance;
     }
-    { long ile = Arrays.stream(transaction) // zwraca liczbę transakcji?
-            .map(String::length)
-            .count(); }
 
-    public double getTransactionCount() { // metoda na liczbę transakcji?
-        return transaction;
+    public double getTransactionsCount() { // metoda na liczbę transakcji?
+        return transactions;
     }
 
     public void income(double amount) {
         double newBalance = balance + amount;
         balance = newBalance;
-        transactionCount++;
+        transactionsCount++;
     }
 
     public void expand(double amount) {
         double newBalance = balance - amount;
         balance = newBalance;
-        transactionCount++;
+        transactionsCount++;
     }
 }
 
@@ -48,19 +46,41 @@ public class CashMachine {
     CashMachine (double stanKonta){
         this.stanKonta = stanKonta; }
 
-    public double stanKonta(){
-        return stanKonta;
-    }
 
-    public void saldo(){
-        System.out.println("Stan konta wynosi:" + stanKonta()); }
 
-    public int getCount()
-    count=transakcje; {
-        return count; }
+    public void balance(){
+        System.out.println("Stan konta wynosi:" + balance()); }
+
 
 
 
     //        Ma ona zawierać tablicę ze zrealizowanymi transakcjami (liczbowa wartość dodatnia,
 //        jeśli użytkownik wpłacił pieniądze i ujemna, jeśli użytkownik wypłacił pieniądze).
 //        Dodaj metody zwracające saldo bankomatu oraz liczbę wykonanych transakcji.
+
+
+
+   //         { long ile = Arrays.stream(getTransactionsCount()) // zwraca liczbę transakcji?
+     //       .map(String::length)
+      //      .count(); }
+
+
+//public Grades() {  // stworzenie tablicy z zerową liczbą ocen (czyli nie można jej powiekszyć)
+//        this.size=0;
+//        this.values = new int[0];
+//    }
+//
+//    public void add(int value) { // metoda tworzy pusta tablice , o jeden większą niż poprzednia+skopiowanie jej elementów+ nowa wartość na koniec
+//        this.size++; // zwiększa o jeden
+//        int[] newTab = new int[this.size];
+//        System.arraycopy(values, 0, newTab, 0, values.length); // metoda klasy system(kopiuje tablice zródłową do docelowej,zachowując układ elementów)
+//        newTab[this.size - 1] = value; // przypisujemy nową wartość do ostatniego elementu w tablicy (konieczne było odjęcie cyfry jeden od rozmiaru tablicy, indeksy liczymy od zera)
+//        this.values = newTab; // przypisanie nowo utworzonej tablicy do tablicy przechowywanej w klasie
+
+
+// double sum = 0;
+//        for(int i = 0; i < this.values.length; i++) {
+//            sum += this.values[i];
+//        }
+//        return sum/this.values.length;
+//    }

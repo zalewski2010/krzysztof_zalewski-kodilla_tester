@@ -8,43 +8,61 @@ import java.io.InputStreamReader;
 import java.sql.SQLOutput;
 
 public class Person {
-    String job;
-    String firstName;
-    String age;
+    private final int job;
+    private final String firstName;
+    private final int age;
 
-
-    public void inicjuj()
-            throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        System.out.println("Podaj imię");
-        firstName = br.readLine();
-        System.out.println("Podaj wiek");
-        age = br.readLine();
-        System.out.println("Podaj zawód");
-        job = br.readLine();
-
+    public Person(String firstName, int age, Job job) {
+        this.firstName = firstName;
+        this.age = age;
+        this.job = job;
+    }
+    public int getAge() {
+        return age;
     }
 
-    public void drukuj() {
-        System.out.println("Przetwarzam dane i drukuję kartę mobilizacji :");
-        System.out.println("FirstName: " + firstName);
-        System.out.println("Age: " + age);
-        System.out.println("Job: " + job); {
-
-        }
-
+    public String getFirstName() {
+        return firstName;
     }
 
+    public Job getJob() {
+    return job;
+    }
 }
 
-class Main {
-       public static void main(String[] args)
 
-           throws IOException
-           {
-               Person job = new Person();
-               job.inicjuj();
-               job.drukuj();
-           }
-       }
+   // public void inicjuj()
+//            throws IOException {
+//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//        System.out.println("Podaj imię");
+//        firstName = br.readLine();
+//        System.out.println("Podaj wiek");
+//        age = br.readLine();
+//        System.out.println("Podaj zawód");
+//        job = br.readLine();
+//
+//    }
+//
+//    public void drukuj() {
+//        System.out.println("Przetwarzam dane i drukuję kartę mobilizacji :");
+//        System.out.println("FirstName: " + firstName);
+//        System.out.println("Age: " + age);
+//        System.out.println("Job: " + job); {
+//
+//        }
+//
+//    }
+//
+//}
+//
+//class Main {
+//       public static void main(String[] args)
+//
+//           throws IOException
+//           {
+//               Person job = new Person();
+//               job.inicjuj();
+//               job.drukuj();
+//           }
+//       }
 

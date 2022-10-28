@@ -28,11 +28,17 @@ public class User {
         for (int i = 0; i < users.length; i++) {
             sum = sum + users[i].age;
 
-            double averageAge = sum / users.length;
+
+        }
+        double averageAge = sum / users.length;
+        for (int i = 0; i < users.length; i++) {
             if (users[i].age < averageAge) {
                 System.out.println(users[i].name + users[i].age + " wiek osoby poniżej średniej");
             }
         }
+
+
+
     }
 }
 
