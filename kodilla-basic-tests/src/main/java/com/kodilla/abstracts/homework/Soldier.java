@@ -12,6 +12,6 @@ public class Soldier extends Job {
         System.out.println("policeman salary: " + getSalary());
     }
     public void responsibilities() {
-        System.out.println("Soldier responsibilities " + getResponibilities());
+        System.out.println("Soldier responsibilities " + getResponsibilities());
     }
 }

@@ -8,6 +8,6 @@ public class Sportsmen extends Job{
         System.out.println("sportsmen salary: " + getSalary());
     }
     public void responsibilities() {
-        System.out.println("sportsmen responsibilities " + getResponibilities());
+        System.out.println("sportsmen responsibilities " + getResponsibilities());
     }
 }

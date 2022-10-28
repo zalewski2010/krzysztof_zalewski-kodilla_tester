@@ -8,7 +8,7 @@ import java.io.InputStreamReader;
 import java.sql.SQLOutput;
 
 public class Person {
-    private final int job;
+    private final Job job;
     private final String firstName;
     private final int age;
 
@@ -25,7 +25,7 @@ public class Person {
         return firstName;
     }
 
-    public Job getJob() {
+    public Job  getJob() {
     return job;
     }
 }

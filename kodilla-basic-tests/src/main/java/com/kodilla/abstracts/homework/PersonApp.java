@@ -23,7 +23,7 @@ public class PersonApp {
         System.out.println("Person3 earn" + person3.getJob().getSalary());
         System.out.println("\r");
 
-        Job sportsmen = new Politics();
+        Job sportsmen = new Sportsmen();
         Person person4 = new Person("David", 32, sportsmen);
         System.out.println("Person4 is a " + person4.getJob().getJobName() + " have to do: " + person4.getJob().getResponsibilities());
         System.out.println("Person4 earn" + person4.getJob().getSalary());
