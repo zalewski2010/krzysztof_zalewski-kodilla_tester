@@ -3,54 +3,53 @@ package com.kodilla.bank.homework;
 
 import java.util.Arrays;
 
-public abstract class CashMachine {
-
-    private final int transactions; // transakcje (tu metode zrobic)
-
-    private final int balance; // stan konta/bilans (tu metode zrobic)
-    private final int income; // wpłatay;
-    private final int expend; // wypłaty
-
-
-    public CashMachine(int balance, int income, int expend, int transactions) {
-        this.balance = balance;
-        this.income = income;
-        this.expend = expend;
-        this.transactions = transactions;
-    }
-
-    public double getBalance() { // metoda zwraca stan konta
-        return balance;
-    }
-
-    public double getTransactionsCount() { // metoda na liczbę transakcji?
-        return transactions;
-    }
-
-    public void income(double amount) {
-        double newBalance = balance + amount;
-        balance = newBalance;
-        transactionsCount++;
-    }
-
-    public void expand(double amount) {
-        double newBalance = balance - amount;
-        balance = newBalance;
-        transactionsCount++;
-    }
-}
-
-        private double stanKonta;
-    private double count;
-
-    CashMachine (double stanKonta){
-        this.stanKonta = stanKonta; }
-
-
-
-    public void balance(){
-        System.out.println("Stan konta wynosi:" + balance()); }
-
+//public abstract class CashMachine} {
+//
+//    private final int transactions; // transakcje (tu metode zrobic)
+//
+//    private final int balance; // stan konta/bilans (tu metode zrobic)
+//    private final int income; // wpłatay;
+//    private final int expend; // wypłaty
+//
+//
+//    public CashMachine(int balance, int income, int expend, int transactions) {
+//        this.balance = balance;
+//        this.income = income;
+//        this.expend = expend;
+//        this.transactions = transactions;
+//    }
+//
+//    public double getBalance() { // metoda zwraca stan konta
+//        return balance;
+//    }
+//
+//    public double getTransactionsCount() { // metoda na liczbę transakcji?
+//        return transactions;
+//    }
+//
+//    public void income(double amount) {
+//        double newBalance = balance + amount;
+//        balance = newBalance;
+//        transactionsCount++;
+//    }
+//
+//    public void expand(double amount) {
+//        double newBalance = balance - amount;
+//        balance = newBalance;
+//        transactionsCount++;
+//    }
+//}
+//
+//        private double stanKonta;
+//    private double count;
+//
+//    CashMachine (double stanKonta){
+//        this.stanKonta = stanKonta; }
+//
+//
+//
+//    public void balance(){
+//        System.out.println("Stan konta wynosi:" + balance()); }
 
 
 
