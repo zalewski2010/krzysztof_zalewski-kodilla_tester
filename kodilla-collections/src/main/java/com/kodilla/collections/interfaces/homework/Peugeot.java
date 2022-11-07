@@ -11,6 +11,9 @@ public class Peugeot implements Car{
 
     }
 
+    public Peugeot(double a) {
+    }
+
     @Override
     public int getSpeed() {
         return increaseSpeed-decreaseSpeed;

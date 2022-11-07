@@ -1,7 +1,5 @@
 package com.kodilla.collections.interfaces.homework;
 
-import static java.lang.Double.sum;
-
 public class Renault implements Car{
     private int decreaseSpeed;
     private int increaseSpeed;
@@ -13,8 +11,8 @@ public class Renault implements Car{
 
     }
 
-
-
+    public Renault(double a) {
+    }
 
 
     @Override

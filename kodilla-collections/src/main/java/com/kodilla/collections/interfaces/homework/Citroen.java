@@ -12,9 +12,11 @@ public class Citroen implements Car {
 
     }
 
+    public Citroen(double a) {
+    }
 
 
-            @Override
+    @Override
     public int getSpeed() {
         return increaseSpeed-decreaseSpeed;
     }
