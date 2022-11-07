@@ -47,21 +47,3 @@ public class CarsApplication {
 
 
 
-//private static Shape drawShape() {
-//        int drawnShapeKind = RANDOM.nextInt(3);
-//        double a = getRandomSize();
-//        if (drawnShapeKind == 0)
-//            return new Circle(a);
-//        else if (drawnShapeKind == 1)
-//            return new Square(a);
-//        else {
-//            double b = getRandomSize();
-//            double c = getRandomSize();
-//            return new Triangle(a, b, c);
-//        }
-//    }
-//
-//    private static double getRandomSize() {
-//        return RANDOM.nextDouble() * 100 + 1;
-
-//car.increaseSpeed()
