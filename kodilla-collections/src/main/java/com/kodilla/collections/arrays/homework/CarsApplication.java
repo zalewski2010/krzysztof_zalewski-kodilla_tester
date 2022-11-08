@@ -22,16 +22,16 @@ public class CarsApplication {
     public static Car drawCar() {
 
         int drawnCarKind = random.nextInt(3);
-        double a = getIncreaseSpeed();
+        double acceleration = getIncreaseSpeed();
 
         if (drawnCarKind ==0) {
-            return new Citroen(a); }
+            return new Citroen(acceleration); }
 
         if (drawnCarKind==1 ) {
-            return new Peugeot(a); }
+            return new Peugeot(acceleration); }
 
        else if (drawnCarKind  ==2  ) {
-            return new Renault(a); }
+            return new Renault(acceleration); }
 
         else { return null;
         }

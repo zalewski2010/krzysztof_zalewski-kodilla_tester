@@ -1,5 +1,7 @@
 package com.kodilla.collections.interfaces.homework;
 
+import java.util.Objects;
+
 public class Renault implements Car{
     private int decreaseSpeed;
     private int increaseSpeed;
@@ -27,8 +29,30 @@ public class Renault implements Car{
 
 
     @Override
+    public String toString() {
+        return "Renault{" +
+                "decreaseSpeed=" + decreaseSpeed +
+                ", increaseSpeed=" + increaseSpeed +
+                '}';
+    }
+
+    @Override
     public int increaseSpeed() {
 
         return increaseSpeed;
+
+
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Renault renault)) return false;
+        return decreaseSpeed == renault.decreaseSpeed && increaseSpeed == renault.increaseSpeed;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(decreaseSpeed, increaseSpeed);
     }
 }

@@ -18,7 +18,7 @@ public class CarUtils {
     }
 
 
-    private static String getCarName(Car car) {
+    public static String getCarName(Car car) {
         if (car instanceof Citroen)
             return "Citroen";
         else if (car instanceof Peugeot)
