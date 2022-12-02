@@ -1,4 +1,4 @@
-package com.example.kodillastream;
+package com.kodilla.kodillastream;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

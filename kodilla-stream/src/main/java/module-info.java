@@ -1,8 +1,8 @@
-module com.example.kodillastream {
+module com.kodilla.kodillastream {
     requires javafx.controls;
     requires javafx.fxml;
 
 
-    opens com.example.kodillastream to javafx.fxml;
-    exports com.example.kodillastream;
+    opens com.kodilla.kodillastream to javafx.fxml;
+    exports com.kodilla.kodillastream;
 }

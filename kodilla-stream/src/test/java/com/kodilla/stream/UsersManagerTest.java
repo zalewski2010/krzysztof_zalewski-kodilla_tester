@@ -1,3 +1,5 @@
+package com.kodilla.stream;
+
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
@@ -84,7 +86,7 @@ class UsersManagerTest {
 
     @Override
     public String toString() {
-        return "UsersManagerTest{}";
+        return "com.kodilla.stream.UsersManagerTest{}";
     }
 
     @Test
