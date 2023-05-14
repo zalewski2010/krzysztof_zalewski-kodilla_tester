@@ -58,3 +58,16 @@ public class NumberCheckerTestSuite {
             assertFalse(result);
         }
 }
+
+ // w value source można wstawić te typy:
+    // short (@ValueSource(shorts = {-2, 0, 1}))
+   // byte (@ValueSource(bytes = {-2, 0, 1}))
+   // int (@ValueSource(ints = {-2, 0, 1}))
+   // long (@ValueSource(longs = {-2L, 0L, 1L}))
+   // float (@ValueSource(floats = {-2.1f, 0.6f, 1.9f}))
+   //double (@ValueSource(doubles = {-2.1, 0.6, 1.9}))
+
+    //java.lang.String (@ValueSource(strings = {"test", "value"}))
+        //java.lang.Class (@ValueSource(classes = {NumberChecker.class}))
+
+//// char (@ValueSource po angielsku (chars = {wpisz litere w nawiasie pojedynczym, wpisz litere w nawiasie pojedynczym}))///
